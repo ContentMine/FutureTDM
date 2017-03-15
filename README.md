@@ -9,8 +9,12 @@ The main outcomes are:
 - presentation of the outcomes at 2 conferences 
 
 All content and data is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All code is under the [MIT license](https://opensource.org/licenses/MIT).
-![Creative Commons by](/assets/images/logo-ccby.png)
+<img src="/assets/images/logo-ccby.png" alt="Creative Commons by" width=100 />
 
+
+<img src="/assets/images/logo-futuretdm.png" alt="Creative Commons by" width=100 />
+<img src="/assets/images/logo-contentmine.png" alt="Creative Commons by" width=100 />
+<img src="/assets/images/logo-okf.png" alt="Creative Commons by" width=100 />
 ![FutureTDM](/assets/images/logo-futuretdm.png)
 ![ContentMine](/assets/images/logo-contentmine.png)
 ![Open Knowledge Foundation](/assets/images/logo-okf.png)
