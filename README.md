@@ -34,13 +34,15 @@ Download all openly accessible papers about Zika via getpapers and analyse for c
 **Go to the [Zika Tutorial](tutorial/zika).**
 
 ### Statistics
-soon come...
+
+**Go to the [Statistics Tutorial](tutorial/statistics) (soon to come...).**
 
 ### Libraries
-soon come...
+
+**Go to the [Libraries Tutorial](tutorial/libraries) (soon to come...).**
 
 ## WORKSHOP
-soon come...
+tba
 
 ## CONFERENCES
 
