@@ -25,7 +25,7 @@ Used Software -> [Content Mine Virtual Machine (05/2016)](https://drive.google.c
 ### Zika
 Download all openly accessible papers about Zika via getpapers and analyse for co-occurrences of clinical trial ID's and spatial entities.
 
-**[Zika Tutorial](tutorials/zika/)**
+**Got to the [Zika Tutorial](tutorials/zika).**
 
 ### Statistics
 soon come...
