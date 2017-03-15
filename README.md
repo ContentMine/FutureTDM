@@ -1,7 +1,9 @@
 # FutureTDM
-All Materials of the [FutureTDM project](http://futuretdm.eu/), an EU Horizon2020 research project with participation of Open Knowledge Foundation and ContentMine.
+All Materials of the participation in the [FutureTDM project](http://futuretdm.eu/).
 
-All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**. 
+All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge Foundation and ContentMine. 
+
+<img src="/assets/images/logo-futuretdm.png" alt="Creative Commons by" width=100 /><img src="/assets/images/logo-contentmine.png" alt="Creative Commons by" width=100 /><img src="/assets/images/logo-okf.png" alt="Creative Commons by" width=100 />
 
 The main outcomes are:
 - 3 tutorials about specific use-cases of text data mining techniques
@@ -10,14 +12,6 @@ The main outcomes are:
 
 All content and data is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All code is under the [MIT license](https://opensource.org/licenses/MIT).
 <img src="/assets/images/logo-ccby.png" alt="Creative Commons by" width=100 />
-
-
-<img src="/assets/images/logo-futuretdm.png" alt="Creative Commons by" width=100 />
-<img src="/assets/images/logo-contentmine.png" alt="Creative Commons by" width=100 />
-<img src="/assets/images/logo-okf.png" alt="Creative Commons by" width=100 />
-![FutureTDM](/assets/images/logo-futuretdm.png)
-![ContentMine](/assets/images/logo-contentmine.png)
-![Open Knowledge Foundation](/assets/images/logo-okf.png)
 
 ## TUTORIALS
 
