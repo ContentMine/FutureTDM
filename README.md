@@ -1,5 +1,5 @@
 # FutureTDM
-All Materials of the participation in the [FutureTDM project](http://futuretdm.eu/).
+All materials of the involvement in the [FutureTDM project](http://futuretdm.eu/).
 
 All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge International and ContentMine. 
 
@@ -84,7 +84,13 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 - [FutureTDM](http://futuretdm.eu/)
 - [Open Knowledge International](http://okfn.org/)
 
-**Further Materials**
+**FutureTDM**
+- Tutorials
+	- [Zika](tutorial/zika)
+	- [Statistics](tutorial/statistics)
+	- [Libraries](tutorial/libraries)
+
+**ContentMine**
 - [Materials](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.
 - [pyCProject](https://github.com/ContentMine/pyCProject): Python wrapper for CProject. 
 - [Dictionaries](https://github.com/ContentMine/dictionaries)
