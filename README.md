@@ -78,12 +78,13 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 
 ## RESSOURCES
 
-[FutureTDM](http://futuretdm.eu/)
-[Open Knowledge International](http://okfn.org/)
+- [ContentMine](http://contentmine.org/)
+- [FutureTDM](http://futuretdm.eu/)
+- [Open Knowledge International](http://okfn.org/)
 
 **Further Materials**
 - [Materials](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.
 - [pyCProject](https://github.com/ContentMine/pyCProject): Python wrapper for CProject. 
 - [Dictionaries](https://github.com/ContentMine/dictionaries)
 - [Discourse](http://discuss.contentmine.org/)
-- [contentmine.org](http://contentmine.org/)
+

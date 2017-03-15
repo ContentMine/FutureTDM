@@ -23,7 +23,7 @@ sudo pip install pycproject
 
 ## TUTORIAL
 
-#### Download all Zika publications available
+### Download all Zika publications available
 The first step always is to get the needed data from the API's. For this we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher-API's.
 
 First we want to have a look, how many results we find for the search term "zika".
@@ -63,7 +63,7 @@ Of the 100 XML-files for 57 of them supplementary materials can be found, and al
 
 Now we have all the available data, which can be used for further analysis.
 
-#### Normalize the data
+### Normalize the data
 
 Before we can start with the extraction and analysis, we have to normalize the raw data and convert it to [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML).
 
@@ -74,7 +74,7 @@ norma --project zika -i fulltext.xml -o scholarly.html --transform nlm2html
 tree zika
 ```
 
-#### Extract the needed facts
+### Extract the needed facts
 
 The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins.
 
@@ -93,12 +93,12 @@ Second we use the word plugin to get frequencies of words inside a publication.
 ami2-word --project zika -i scholarly.html --w.words wordFrequencies
 ```
 
-#### Check word frequencies
+### Check word frequencies
 
 
-#### Check co-occurences of entities
+### Check co-occurences of entities
 
-#### Follow Up's
+## FOLLOW UPS
 
 - Do another tutorial from the FutureTDM project 
 - Learn more about the tools used with our [software tutorials](https://github.com/ContentMine/workshop-resources)
