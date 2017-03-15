@@ -21,7 +21,7 @@ sudo pip install --upgrade numpy
 sudo pip install pycproject
 ```
 
-## TUTORIALS
+## TUTORIAL
 
 #### Download all Zika publications available
 The first step always is to get the needed data from the API's. For this we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher-API's.

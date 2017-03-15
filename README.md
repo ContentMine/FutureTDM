@@ -1,5 +1,5 @@
 # FutureTDM
-Materials of the [FutureTDM project](http://futuretdm.eu/).
+All Materials of the [FutureTDM project](http://futuretdm.eu/), an EU Horizon2020 research project with participation of Open Knowledge Foundation and ContentMine.
 
 All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**. 
 
@@ -9,10 +9,17 @@ The main outcomes are:
 - presentation of the outcomes at 2 conferences 
 
 All content and data is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All code is under the [MIT license](https://opensource.org/licenses/MIT).
+![Creative Commons by](/assets/images/logo-ccby.png)
+
+![FutureTDM](/assets/images/logo-futuretdm.png)
+![ContentMine](/assets/images/logo-contentmine.png)
+![Open Knowledge Foundation](/assets/images/logo-okf.png)
 
 ## TUTORIALS
 
-Used Software -> [Content Mine Virtual Machine (05/2016)](https://drive.google.com/open?id=0B7pJKedx9b97LTBVRmEzbzJOVlU) with: 
+**Used Software**
+
+[Content Mine Virtual Machine (05/2016)](https://drive.google.com/open?id=0B7pJKedx9b97LTBVRmEzbzJOVlU) with: 
 - [getpapers](https://github.com/ContentMine/getpapers) (0.4.5), [norma](https://github.com/ContentMine/norma) (0.2.26) and [ami](https://github.com/ContentMine/ami) (0.2.24)
 - [Python3](https://www.python.org/) (3.2.3) and [IPython](http://ipython.org/) (4.1.1).
 - [pyCProject](https://github.com/ContentMine/pyCProject) (v.)
@@ -25,7 +32,7 @@ Used Software -> [Content Mine Virtual Machine (05/2016)](https://drive.google.c
 ### Zika
 Download all openly accessible papers about Zika via getpapers and analyse for co-occurrences of clinical trial ID's and spatial entities.
 
-**Got to the [Zika Tutorial](tutorial/zika).**
+**Go to the [Zika Tutorial](tutorial/zika).**
 
 ### Statistics
 soon come...
@@ -33,14 +40,13 @@ soon come...
 ### Libraries
 soon come...
 
-
 ## WORKSHOP
 soon come...
 
+## CONFERENCES
 
-## PRESENTATIONS
-soon come...
-
+- [FutureTDM Workshop II](http://www.futuretdm.eu/knowledge-cafes/futuretdm-workshop-2/): 29th of March 2017 @ Brussels, Belgieum
+- FutureTDM final conference: 12th + 13th of June 2017 @ Salzburg, Austria
 
 ## COPYRIGHT
 
@@ -74,7 +80,8 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 ## RESSOURCES
 
 **Further Materials**
-- [GitHub Repository](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.
+- [Materials](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.
 - [pyCProject](https://github.com/ContentMine/pyCProject): Python wrapper for CProject. 
 - [Dictionaries](https://github.com/ContentMine/dictionaries)
-
+- [Discourse](http://discuss.contentmine.org/)
+- [contentmine.org](http://contentmine.org/)
