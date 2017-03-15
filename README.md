@@ -1,9 +1,9 @@
 # FutureTDM
 All Materials of the participation in the [FutureTDM project](http://futuretdm.eu/).
 
-All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge Foundation and ContentMine. 
+All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge International and ContentMine. 
 
-<img src="/assets/images/logo-futuretdm.png" alt="Creative Commons by" width=100 /><img src="/assets/images/logo-contentmine.png" alt="Creative Commons by" width=100 /><img src="/assets/images/logo-okf.png" alt="Creative Commons by" width=100 />
+<a href="http://futuretdm.eu/" title=""><img src="/assets/images/logo-futuretdm.png" alt="FutureTDM" height=50 /></a> <a href="http://contentmine.org" title=""><img src="/assets/images/logo-contentmine.png" alt="ContentMine" height=50 /></a> <a href="http://okfn.org/" title="Open Knowledge International"><img src="/assets/images/logo-okf.png" alt="Open Knowledge International" height=50 /></a>
 
 The main outcomes are:
 - 3 tutorials about specific use-cases of text data mining techniques
@@ -11,6 +11,7 @@ The main outcomes are:
 - presentation of the outcomes at 2 conferences 
 
 All content and data is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All code is under the [MIT license](https://opensource.org/licenses/MIT).
+
 <img src="/assets/images/logo-ccby.png" alt="Creative Commons by" width=100 />
 
 ## TUTORIALS
@@ -76,6 +77,9 @@ When you are ready, submit a [pull request](https://github.com/ContentMine/Futur
 We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issues) to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. When submitting a bug report, please try to provide a screenshot that demonstrates the problem. 
 
 ## RESSOURCES
+
+[FutureTDM](http://futuretdm.eu/)
+[Open Knowledge International](http://okfn.org/)
 
 **Further Materials**
 - [Materials](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.
