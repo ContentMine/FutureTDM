@@ -14,8 +14,9 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 
 <img src="/assets/images/logo-ccby.png" alt="Creative Commons by" width=100 />
 
-## TUTORIALS
-**Option 1: Install software locally (recommended)**
+## PREPARATION
+
+### Option 1: Install software locally (recommended)
 
 You can find more about how to install the different software parts at their pages - [getpapers](https://github.com/ContentMine/getpapers), [norma](https://github.com/ContentMine/norma/releases) and [ami](https://github.com/ContentMine/ami/releases). This setup is the one used to create the tutorials. Additionally you need the following software to execute the tutorial:
 - [getpapers](https://github.com/ContentMine/getpapers) (0.4.12)
@@ -25,7 +26,7 @@ You can find more about how to install the different software parts at their pag
 - [Jupyter Notebook](http://jupyter.org/) (4.2.1)
 - [pyCProject](https://github.com/ContentMine/pyCProject) (v.)
 
-**Option 2: Use the Virtual Machine**
+### Option 2: Use the Virtual Machine
 
 - [Install the Virtual Machine](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/vms) with the [Virtual Machine Image May 2016](https://drive.google.com/open?id=0B7pJKedx9b97LTBVRmEzbzJOVlU) and start it. The VM consists of:
 - [getpapers](https://github.com/ContentMine/getpapers) (0.4.5)
@@ -42,9 +43,11 @@ sudo pip install --upgrade numpy
 sudo pip install pycproject
 ```
 
-### Preparation
+### Learn ContentMining
 - Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami).
 - Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
+
+## TUTORIALS
 
 Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
 ```bash
