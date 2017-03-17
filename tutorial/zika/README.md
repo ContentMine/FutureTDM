@@ -126,6 +126,7 @@ The analysis of the extracted data is done with Python in a [Jupyter Notebook](h
 **Get the [Jupyter Notebook](tutorial-zika.ipynb).**
 
 **Use the Jupyter Notebook:**
+
 Start jupyter via:
 ```bash
 jupyter notebook
