@@ -2,13 +2,13 @@
 
 **The tutorial shows you some basic and advanced text and data mining methods to explore the scientific publications and get a better understanding of the Zika virus.**
 
-The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look on:
+The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look at:
 - a) the virus itself ([Zika virus](https://en.wikipedia.org/wiki/Zika_virus))
-- b) the virus-transmitting species (in our case [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictu](https://en.wikipedia.org/wiki/Aedes_albopictus))
+- b) the virus-transmitting species (in our case [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictus](https://en.wikipedia.org/wiki/Aedes_albopictus))
 - c) drugs, clinical trials and locations mentioned in combination with the virus and the virus-transmitting species
-- d) similar pandemics/viruses (like the [Yellow fever](https://en.wikipedia.org/wiki/Yellow_fever) or the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus), which is under suspect of beeing the next pandemic)
+- d) similar pandemics/viruses (like the [Yellow fever](https://en.wikipedia.org/wiki/Yellow_fever) or the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus), which is a flavivirus amongst a [range of suspects](https://wwwnc.cdc.gov/eid/article/22/12/16-0123-t2) for becoming the next pandemic)
 
-As data source we use all publications from the [Europe PMC](https://europepmc.org/) (EUPMC) API, because they are Open Access.
+As data source, we use all publications from the [Europe PMC](https://europepmc.org/) (EUPMC) API, because they are Open Access.
 
 The used approach should also work as a blueprint to gather information about pandemics in general and help for future research when a new virus starts to spread.
 
@@ -33,7 +33,7 @@ The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.
 - Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami). 
 - Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
 
-Both introductory steps are not compulsive, but helps to better understand the tutorial and adapt it to your own needs.
+Both introductory steps are not mandatory, but help to better understand the tutorial and adapt it to your own needs.
 
 Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
 ```bash
@@ -45,25 +45,25 @@ cd tutorials/zika
 
 ### Download from Europe PMC
 
-The first step always is to get the needed data from the API's. For this we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher-API's. In this tutorial we will mainly use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
+The first step always is to get the needed data from the APIs. For this, we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher APIs. In this tutorial, we will mainly use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from the life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
 
 **Get Zika publications**
 
-First we want to set the variables for the query and for the folder we want the data to be stored in.
+First, we want to set the variables for the query and for the folder we want the data to be stored in.
 
 ```bash
 QUERY='zika'
 FOLDER='zika'
 ```
 
-Then we have a look, how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
+Then, we have a look at how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
 
 ```bash
 getpapers -q $QUERY -o $FOLDER
 ```
-1126 papers are found in this case (14. 03. 2017).
+1126 papers were found in this case (14. 03. 2017).
 
-Then we download the ```fulltext.xml``` files for each publication. For this, add ```-x``` flag to the query. The results then can be viewed again with the tree command.
+Then, we download the ```fulltext.xml``` files for each publication. For this, add ```-x``` flag to the query. The results can then be viewed again with the tree command.
 
 ```bash
 getpapers -q $QUERY -o $FOLDER -x
@@ -85,7 +85,7 @@ tree aedesaegypti
 
 **Get Usutu virus publications**
 
-At last, we want to have a look on the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus) and download the related publications. This virus is mentioned by some researcher, to be maybe the next pandemic. So maybe we can apply some lessons learned from the zika virus to this corpus.
+At last, we want to have a look at the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus) and download the related publications. This virus is amongst several dozens of known viruses that have been [found](https://doi.org/10.3201/eid2212.160123) to have a high epidemic potential. So maybe we can apply some lessons learned from the Zika virus to this corpus.
 
 ```bash
 QUERY='usutu'
@@ -107,9 +107,9 @@ getpapers -q 'zika' -o zika -s
 tree zika
 ```
 
-**Optional: Get the PDF's**
+**Optional: Get the PDFs**
 
-To download all PDF's of the scientific papers, we add ```-p``` to tell that we want PDF's. Please beware of, that this will take around 3GB of space on your harddrive.
+To download all PDFs of the scientific papers, we add ```-p``` to tell that we want PDFs. Please beware that this will take around 3GB of space on your harddrive.
 
 ```bash
 QUERY='zika'
@@ -120,7 +120,7 @@ tree zika
 
 **Save raw data**
 
-At this point, we recommend to save the raw data, so you can jump back to this point, if you want to later on. You can simply copy your three folders or compress them, whatever you like.
+At this point, we recommend to save the raw data, so you can jump back to this point if you want to later on. You can simply copy your three folders or compress them, whatever you like.
 
 ### Normalize the data
 
@@ -143,11 +143,11 @@ tree usutu
 
 ### Extract the needed facts
 
-The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins. This will be besides the [metadata](https://en.wikipedia.org/wiki/Metadata) of the publications the main datasource for the further analysis later on.
+The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins. This will be &mdash; besides the [metadata](https://en.wikipedia.org/wiki/Metadata) of the publications &mdash; the main datasource for the further analysis later on.
 
 #### Extract Species
 
-First we use the [species plugin](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami#ami2-species) to get the genus and binomial nomenclature. The species are especially important, cause it could give as a lead to transmitting animals, in our case Aedes (Mosquitos).
+First, we use the [species plugin](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami#ami2-species) to get the genus and binomial nomenclature. The species are especially important, because knowing them could give us a lead in terms of Zika-transmitting animals, in our case *Aedes* (mosquitos).
 
 ```bash
 FOLDER='zika'
@@ -175,7 +175,7 @@ tree usutu
 
 #### Extract word frequencies
 
-Second we use the word plugin to get frequencies of words in a publication. This can help us to get a better understanding, of the most important concepts. This could be a re-occuring location, a method constantly used or an important animal in the transmission process. With this explorative approach it is planned to find new relations or get a general understanding of important knowledge.
+Second, we use the word plugin to get frequencies of words in a publication. This can help us to get a better understanding  of the most important concepts. This could be a re-occuring location, a method constantly used or an important animal in the transmission process. With this explorative approach, it is planned to find new relations or get a general understanding of important knowledge.
 
 ```bash
 FOLDER='zika'
@@ -195,13 +195,13 @@ ami2-word --project $FOLDER -i scholarly.html --w.words wordFrequencies
 tree usutu
 ```
 
-#### Extract clinical trial ID's
+#### Extract clinical trial IDs
 
 soon to come...
 
 ### Analyse the data with Jupyter Notebook
 
-The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/). There are several methods applied. Some of them are descriptive and show the wanted outcome, but some are explorativ and conclusions must be done by a domain expert by exploring the data and it's presentation by her/himselves. Following analysis is done:
+The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/). There are several methods applied. Some of them are descriptive and show the wanted outcome, but some are explorativ, and conclusions must be done by a domain expert by exploring the data and its presentation by her/himselves. The following analysis is done:
 - plot a timeline of the publication years
 - get the most mentioned words and species over the full corpus
 - find relations between terms (species, words, authors, journals, publications) through network analysis methods, like community detection, co-occurences and network-projection.
@@ -229,12 +229,12 @@ This should let your browser open a new tab with the actual directory in it. Cli
 
 ## RESSOURCES
 
-- [ContentMine/Hypothes.is Proposal](http://riojournal.com/articles.php?journal_name=rio&id=8424)
+- [ContentMine/Hypothes.is Proposal](https://doi.org/10.3897/rio.2.e8424)
 - [Wikidata:WikiProject Source MetaData/Wikidata lists/Items about Zika virus or fever](https://www.wikidata.org/wiki/Wikidata:WikiProject_Source_MetaData/Wikidata_lists/Items_about_Zika_virus_or_fever)
 - Article: [Zika may be spread by up to 35 species of mosquitoes, researchers say](http://www.miamiherald.com/news/health-care/article135414359.html)
 
 
-All materials worked out in this repository where conducted within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge International and ContentMine. 
+All materials in this repository were produced within the EU Horizon2020 project **Future TDM - The Future of Text and Data Mining**, an EU Horizon2020 research project with participation of Open Knowledge International and ContentMine. 
 
 <a href="http://futuretdm.eu/" title=""><img src="/assets/images/logo-futuretdm.png" alt="FutureTDM" height=50 /></a> <a href="http://contentmine.org" title=""><img src="/assets/images/logo-contentmine.png" alt="ContentMine" height=50 /></a> <a href="http://okfn.org/" title="Open Knowledge International"><img src="/assets/images/logo-okf.png" alt="Open Knowledge International" height=50 /></a>
 
