@@ -2,7 +2,7 @@
 
 **The tutorial shows you some basic and advanced text and data mining methods to explore the scientific publications and get a better understanding of the Zika virus.**
 
-The main part will focus on getting information about the zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look on:
+The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look on:
 - a) the virus itself ([Zika virus](https://en.wikipedia.org/wiki/Zika_virus))
 - b) the virus-transmitting species (in our case [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictu](https://en.wikipedia.org/wiki/Aedes_albopictus))
 - c) drugs, clinical trials and locations mentioned in combination with the virus and the virus-transmitting species
@@ -10,11 +10,10 @@ The main part will focus on getting information about the zika virus, the resear
 
 As data source we use all publications from the [Europe PMC](https://europepmc.org/) (EUPMC) API, because they are Open Access.
 
-The shown approach should also work as a blueprint to gather information about pandemics in general and help to gather needed information when, for example, a new virus starts to spread.
+The used approach should also work as a blueprint to gather information about pandemics in general and help for future research when a new virus starts to spread.
 
 ## ABOUT ZIKA
 The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.wikipedia.org/wiki/Flaviviridae). It is spread by daytime-active [Aedes](https://en.wikipedia.org/wiki/Aedes) mosquitos, such as [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictu](https://en.wikipedia.org/wiki/Aedes_albopictus).
-
 
 **Additional information**
 
@@ -31,8 +30,10 @@ The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.
 
 **Preparation**
 
-- Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami).
+- Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami). 
 - Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
+
+Both introductory steps are not compulsive, but helps to better understand the tutorial and adapt it to your own needs.
 
 Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
 ```bash
@@ -43,7 +44,8 @@ cd tutorials/zika
 ## TUTORIAL
 
 ### Download from Europe PMC
-The first step always is to get the needed data from the API's. For this we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher-API's. This will take less than 200MB of memory.
+
+The first step always is to get the needed data from the API's. For this we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher-API's. In this tutorial we will mainly use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
 
 **Get Zika publications**
 
@@ -54,27 +56,26 @@ QUERY='zika'
 FOLDER='zika'
 ```
 
-Then we have a look, how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format).
+Then we have a look, how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
 
 ```bash
 getpapers -q $QUERY -o $FOLDER
 ```
-1126 papers are found in our case (14. 03. 2017).
+1126 papers are found in this case (14. 03. 2017).
 
-Then we download the fulltext.xml files for each publication. For this, add ```-x``` flag to the query. The results then can be viewed again with the tree command.
+Then we download the ```fulltext.xml``` files for each publication. For this, add ```-x``` flag to the query. The results then can be viewed again with the tree command.
 
 ```bash
 getpapers -q $QUERY -o $FOLDER -x
 tree zika
 ```
-The query finds 100 XML-files, and can download 98 of them (14. 03. 2017).
 
 **Get Aedes aegypti (virus-transmitting Mosquito) publications**
 
-We then also want to get all publications of the virus transmitting Mosquito [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) (```Stegomyia aegypti``` is a synonym for Aedes aegypti).
+We then also want to have a look at all publications of the virus-transmitting Mosquito [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) (```Stegomyia aegypti``` is a synonym for Aedes aegypti).
 
 ```bash
-QUERY='Stegomyia aedes aegypti'
+QUERY='stegomyia aedes aegypti'
 FOLDER='aedesaegypti'
 getpapers -q $QUERY -o $FOLDER -x
 tree aedesaegypti
@@ -84,7 +85,7 @@ tree aedesaegypti
 
 **Get Usutu virus publications**
 
-At last, we want to have a look on the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus) and download the related publications. 
+At last, we want to have a look on the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus) and download the related publications. This virus is mentioned by some researcher, to be maybe the next pandemic. So maybe we can apply some lessons learned from the zika virus to this corpus.
 
 ```bash
 QUERY='usutu'
@@ -95,31 +96,25 @@ tree usutu
 
 193 publications are found.
 
+Finally, we have all the available data, which can be used for further analysis.
+
 **Optional: Get supplementary materials, if needed**
 
-If you want to also use the supplementary materials available (takes a fair amount of memory), here is the command to download it. Simply add ```-s``` to the query, and view the results as usual.
+If you want to use the supplementary materials available, here is the command to download it. Simply add ```-s``` to the query, and view the results as usual.
 
 ```bash
 getpapers -q 'zika' -o zika -s
 tree zika
 ```
-Of the 100 XML-files, for 57 of them supplementary materials can be found, and all of the 57 can be downloaded.
-
-Finally, we have all the available data, which can be used for further analysis.
 
 **Optional: Get the PDF's**
 
-To download all PDF's of the found scientific papers, we add an output folder via ```-o zika``` and add ```-p``` to tell that we want PDF's. Please beware of, that this will take around 3GB of space on your harddrive.
+To download all PDF's of the scientific papers, we add ```-p``` to tell that we want PDF's. Please beware of, that this will take around 3GB of space on your harddrive.
 
 ```bash
 QUERY='zika'
 FOLDER='zika'
 getpapers -q $QUERY -o $FOLDER -p
-```
-
-After the download, we want to have a look on the downloaded files in a tree-like directory view.
-
-```bash
 tree zika
 ```
 
@@ -129,9 +124,7 @@ At this point, we recommend to save the raw data, so you can jump back to this p
 
 ### Normalize the data
 
-Before we can start with the extraction and analysis, we have to normalize the raw data and convert it to [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML).
-
-For this, we convert with [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) the fulltext.xml files to scholarly.html files, and view the results.
+Before we can start with the extraction and analysis, we have to normalize the raw data and convert it to [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML), so it is easier to process further on. For this, we convert with [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) the ```fulltext.xml``` files to ```scholarly.html``` files, and view the results.
 
 ```bash
 norma --project zika -i fulltext.xml -o scholarly.html --transform nlm2html
@@ -150,11 +143,11 @@ tree usutu
 
 ### Extract the needed facts
 
-The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins.
+The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins. This will be besides the [metadata](https://en.wikipedia.org/wiki/Metadata) of the publications the main datasource for the further analysis later on.
 
-**Extract Species**
+#### Extract Species
 
-First we use the species plugin to get the genus and binomial nomenclature.
+First we use the [species plugin](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami#ami2-species) to get the genus and binomial nomenclature. The species are especially important, cause it could give as a lead to transmitting animals, in our case Aedes (Mosquitos).
 
 ```bash
 FOLDER='zika'
@@ -180,9 +173,9 @@ ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genussp
 tree usutu
 ```
 
-**Extract word frequencies**
+#### Extract word frequencies
 
-Second we use the word plugin to get frequencies of words inside a publication. 
+Second we use the word plugin to get frequencies of words in a publication. This can help us to get a better understanding, of the most important concepts. This could be a re-occuring location, a method constantly used or an important animal in the transmission process. With this explorative approach it is planned to find new relations or get a general understanding of important knowledge.
 
 ```bash
 FOLDER='zika'
@@ -202,13 +195,17 @@ ami2-word --project $FOLDER -i scholarly.html --w.words wordFrequencies
 tree usutu
 ```
 
-**Extract clinical trials**
+#### Extract clinical trial ID's
 
 soon to come...
 
-## Analyse the data with Jupyter Notebook
+### Analyse the data with Jupyter Notebook
 
-The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/).
+The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/). There are several methods applied. Some of them are descriptive and show the wanted outcome, but some are explorativ and conclusions must be done by a domain expert by exploring the data and it's presentation by her/himselves. Following analysis is done:
+- plot a timeline of the publication years
+- get the most mentioned words and species over the full corpus
+- find relations between terms (species, words, authors, journals, publications) through network analysis methods, like community detection, co-occurences and network-projection.
+- find all publications in which a term was mentioned
 
 **Get the [Jupyter Notebook](tutorial-zika.ipynb).**
 
@@ -218,18 +215,17 @@ Start jupyter via:
 ```bash
 jupyter notebook
 ```
-This should let your browser open a new tab with the actual directory in it. Click on the ```tutorial-zika.ipynb``` file to open the jupyter notebook. Then you can execute cell by cell and adapt the notebook to your needs.
 
-### Check co-occurences of entities
+This should let your browser open a new tab with the actual directory in it. Click on the ```tutorial-zika.ipynb``` file to open the jupyter notebook. Then you can execute cell by cell and adapt the notebook to your needs. There is a more detailed description of the analysis done in the Jupyter notebook.
 
 ## FOLLOW UPS
 
 - Do another tutorial from the FutureTDM project: [Statistics](tutorial/statistics) and [Libraries](tutorial/libraries)
 - Learn more about the tools used with our [software tutorials](https://github.com/ContentMine/workshop-resources)
-- [Contribute to this repository](../README.md#contribution)
-- Send us your results at [Discourse](http://discuss.contentmine.org/)
-- Share the tutorial with others in your department or social network.
-- Ask us your questions at [Discourse](http://discuss.contentmine.org/), via Email (contact@contentmine.org) or on Twitter ([@TheContentMine](https://twitter.com/TheContentMine))
+- [Contribute to this repository](../README.md#contribution).
+- Send us your results at [Discourse](http://discuss.contentmine.org/) or via Email (contact@contentmine.org).
+- Share the tutorial with others in your department or on the web.
+- Ask us your questions at [Discourse](http://discuss.contentmine.org/), via Email (contact@contentmine.org) or on Twitter ([@TheContentMine](https://twitter.com/TheContentMine)).
 
 ## RESSOURCES
 

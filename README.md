@@ -7,6 +7,7 @@ All materials worked out in this repository where conducted within the EU Horizo
 
 The main outcomes are:
 - 3 tutorials about specific use-cases of text data mining techniques
+	- [Zika virus](tutorial/zika)
 - workshop
 - presentation of the outcomes at 2 conferences 
 
