@@ -74,7 +74,7 @@ tba
 
 ## CONFERENCES
 
-- [FutureTDM Workshop II](http://www.futuretdm.eu/knowledge-cafes/futuretdm-workshop-2/): 29th of March 2017 @ Brussels, Belgieum
+- [FutureTDM Workshop II](http://www.futuretdm.eu/knowledge-cafes/futuretdm-workshop-2/): 29th of March 2017 @ Brussels, Belgium
 - FutureTDM final conference: 12th + 13th of June 2017 @ Salzburg, Austria
 
 ## COPYRIGHT
