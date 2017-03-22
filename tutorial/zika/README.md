@@ -13,7 +13,7 @@ As data source, we use all publications from the [Europe PMC](https://europepmc.
 The used approach should also work as a blueprint to gather information about pandemics in general and help for future research when a new virus starts to spread.
 
 ## ABOUT ZIKA
-The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.wikipedia.org/wiki/Flaviviridae). It is spread by daytime-active [Aedes](https://en.wikipedia.org/wiki/Aedes) mosquitos, such as [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictu](https://en.wikipedia.org/wiki/Aedes_albopictus).
+The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.wikipedia.org/wiki/Flaviviridae). It is spread by daytime-active [*Aedes*](https://en.wikipedia.org/wiki/Aedes) mosquitos, such as [*Aedes aegypti*](https://en.wikipedia.org/wiki/Aedes_aegypti) and [*Aedes albopictus*](https://en.wikipedia.org/wiki/Aedes_albopictus).
 
 **Additional information**
 
