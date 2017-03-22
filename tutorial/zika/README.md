@@ -59,7 +59,7 @@ FOLDER='zika'
 Then, we have a look at how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
 
 ```bash
-getpapers -q $QUERY -o $FOLDER
+getpapers -q $QUERY -n -o $FOLDER
 ```
 1126 papers were found in this case (14. 03. 2017).
 
