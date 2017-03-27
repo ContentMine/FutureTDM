@@ -19,10 +19,10 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 
 ### Option 1: Install software locally (recommended)
 
-You can find more about how to install the different software parts at their pages - [getpapers](https://github.com/ContentMine/getpapers), [norma](https://github.com/ContentMine/norma/releases) and [ami](https://github.com/ContentMine/ami/releases). This setup is the one used to create the tutorials. Additionally you need the following software to execute the tutorial:
+You can find more about how to install the different software parts at their pages. This setup is the one used to create the tutorials. Additionally you need the following software to execute the tutorial:
 - [getpapers](https://github.com/ContentMine/getpapers) (0.4.12)
-- [norma](https://github.com/ContentMine/norma) (0.2.26)
-- [ami](https://github.com/ContentMine/ami)
+- [norma](https://github.com/ContentMine/norma) (0.2.26) ([download the latest release](https://github.com/ContentMine/norma/releases))
+- [ami](https://github.com/ContentMine/ami) ([download the latest release](https://github.com/ContentMine/ami/releases))
 - [Python3](https://www.python.org/) (3.4.3) with the networkx (1.11), pandas (0.19.2), matplotlib (1.5.3) and numpy (1.11.3) modules.
 - [Jupyter Notebook](http://jupyter.org/) (4.2.1)
 - [pyCProject](https://github.com/ContentMine/pyCProject) (v.)

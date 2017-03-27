@@ -1,6 +1,6 @@
 # Tutorial: Zika
 
-**The tutorial shows you some basic and advanced text and data mining methods to explore the scientific publications and get a better understanding of the Zika virus.**
+**The tutorial shows you some basic and advanced text and data mining methods with the ContentMine toolchain, to explore the scientific publications and get a better understanding of the Zika virus.**
 
 The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look at:
 - a) the virus itself ([Zika virus](https://en.wikipedia.org/wiki/Zika_virus))
