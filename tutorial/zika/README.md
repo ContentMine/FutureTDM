@@ -4,7 +4,7 @@
 
 The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look at:
 - a) the virus itself ([Zika virus](https://en.wikipedia.org/wiki/Zika_virus))
-- b) the virus-transmitting species (in our case [Aedes aegypti](https://en.wikipedia.org/wiki/Aedes_aegypti) and [Aedes albopictus](https://en.wikipedia.org/wiki/Aedes_albopictus))
+- b) the virus-transmitting species (also known as [disease vectors](https://en.wikipedia.org/wiki/Vector_(epidemiology)); in our case [*Aedes aegypti*](https://en.wikipedia.org/wiki/Aedes_aegypti) and [*Aedes albopictus*](https://en.wikipedia.org/wiki/Aedes_albopictus))
 - c) drugs, clinical trials and locations mentioned in combination with the virus and the virus-transmitting species
 - d) similar pandemics/viruses (like the [Yellow fever](https://en.wikipedia.org/wiki/Yellow_fever) or the [Usutu virus](https://en.wikipedia.org/wiki/Usutu_virus), which is a flavivirus amongst a [range of suspects](https://wwwnc.cdc.gov/eid/article/22/12/16-0123-t2) for becoming the next pandemic)
 
