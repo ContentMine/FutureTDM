@@ -15,67 +15,53 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 
 <img src="/assets/images/logo-ccby.png" alt="Creative Commons by" width=100 />
 
-## PREPARATION
+## DO CONTENT MINING
 
-### Option 1: Install software locally (recommended)
+For this, please check out the [installation guide](installation.md) with a list of helpful resources to get into text data mining with the ContentMine software.
 
-You can find more about how to install the different software parts at their pages. This setup is the one used to create the tutorials. Additionally you need the following software to execute the tutorial:
-- [getpapers](https://github.com/ContentMine/getpapers) (0.4.12)
-- [norma](https://github.com/ContentMine/norma) (0.2.26) ([download the latest release](https://github.com/ContentMine/norma/releases))
-- [ami](https://github.com/ContentMine/ami) ([download the latest release](https://github.com/ContentMine/ami/releases))
-- [Python3](https://www.python.org/) (3.4.3) with the networkx (1.11), pandas (0.19.2), matplotlib (1.5.3) and numpy (1.11.3) modules.
-- [Jupyter Notebook](http://jupyter.org/) (4.2.1)
-- [pyCProject](https://github.com/ContentMine/pyCProject) (v.)
+## TUTORIALS / USE-CASES
 
-### Option 2: Use the Virtual Machine
+We worked out three very different use-cases to show the power of text data mining with our software.
 
-- [Install the Virtual Machine](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/vms) with the [Virtual Machine Image May 2016](https://drive.google.com/open?id=0B7pJKedx9b97LTBVRmEzbzJOVlU) and start it. The VM consists of:
-- [getpapers](https://github.com/ContentMine/getpapers) (0.4.5)
-- [norma](https://github.com/ContentMine/norma) (0.2.26)
-- [ami](https://github.com/ContentMine/ami) (0.2.24)
-- [Python3](https://www.python.org/) (3.2.3) and [IPython](http://ipython.org/) (4.1.1).
+### Zika Virus
 
-The virtual machine has older software installed, so the commands sometimes do not work in the exact same way as documented here. For example, getpapers needs no ```-q``` flag for the query-term. Keep that in mind, if some problems appear.
+Use text data mining to get an overview on the research around the zika virus. How did the research field evolve in the last decades? What authors and journals contributed most and how are they connected? and and dive into the data/publications to get a better understanding, on the state of it and have a look at the species mentioned.
 
-Before you can start, you neet to install pyCProject and upgrade numpy via pip. The superuser password is ```password```.
+**Go to the [Zika Tutorial](tutorials/zika).**
 
-```bash
-sudo pip install --upgrade numpy
-sudo pip install pycproject
-```
+### Libraries (Systematic Literature Review)
 
-### Learn ContentMining
-- Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami).
-- Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
+**Go to the [Libraries Tutorial](tutorials/libraries) (soon to come...).**
 
-## TUTORIALS
+### Statistics (p-hacking)
 
-Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
-```bash
-cd tutorials/zika
-```
-, and you are in the right folder.
+**Go to the [Statistics Tutorial](tutorials/statistics) (soon to come...).**
 
-### Zika
-Download all openly accessible papers about Zika via getpapers and analyse for co-occurrences of clinical trial ID's and spatial entities.
+## WORKSHOPS
 
-**Go to the [Zika Tutorial](tutorial/zika).**
+### FutureTDM Workshop II at Brussels
 
-### Statistics
+Date: 29th of March 2017
 
-**Go to the [Statistics Tutorial](tutorial/statistics) (soon to come...).**
+Location: EU Parliament, Brussels
 
-### Libraries
+**Go to the [documentation](workshops/futuretdm-brussels).**
 
-**Go to the [Libraries Tutorial](tutorial/libraries) (soon to come...).**
+### Workshop at ELPUB 2017 Conference
 
-## WORKSHOP
-tba
+Date: 6th of June 2017
 
-## CONFERENCES
+Location: 21st ELPUB Conference at Limassol, Cyprus
 
-- [FutureTDM Workshop II](http://www.futuretdm.eu/knowledge-cafes/futuretdm-workshop-2/): 29th of March 2017 @ Brussels, Belgium
-- FutureTDM final conference: 12th + 13th of June 2017 @ Salzburg, Austria
+**Go to the [documentation](workshops/elpub-limassol).**
+
+### Presentation at FutureTDM Symposium at Salzburg
+
+Date: 13th of June 2017
+
+Location: University of Applied Sciences in Salzburg, Austria
+
+**Go to the [documentation](workshops/futuretdm-salzburg).**
 
 ## COPYRIGHT
 
@@ -114,9 +100,13 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 
 **FutureTDM**
 - Tutorials
-	- [Zika](tutorial/zika)
-	- [Statistics](tutorial/statistics)
-	- [Libraries](tutorial/libraries)
+	- [Zika](tutorials/zika)
+	- [Statistics](tutorials/statistics)
+	- [Libraries](tutorials/libraries)
+- Workshops
+	- [FutureTDM Workshop II at Brussels](workshops/futuretdm-brussels)
+	- [Workshop at ELPUB Conference in Limassol](workshops/elpub-limassol)
+	- [Presentation at FutureTDM Symposium in Salzburg](workshops/futuretdm-salzburg)
 
 **ContentMine**
 - [Materials](https://github.com/ContentMine/workshop-resources): Software tutorials, training guidelines and trainign modules for ContentMine.

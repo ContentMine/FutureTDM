@@ -3,5 +3,7 @@
 notes.md
 *.sublime-project
 *.sublime-workspace
-/.ipynb_checkpoints
-
+/pyCProject
+.ipynb_checkpoints
+/tutorials/zika/zika
+/tutorials/zika/usutu
