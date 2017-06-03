@@ -17,8 +17,8 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 ## DO CONTENT MINING
 
 To do text data mining with the content mine software you need two things:
-1. Install the ContentMine software. Find out more in [installation.md](../../installation.md).
-2. Learn about text data mining. As preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
+1. Install the ContentMine software. Find out more in [installation.md](../../blob/master/installation.md).
+2. Learn about text data mining. As preparation we recommend to have a look at the resources list in [installation.md](../../blob/master/installation.md). 
 
 ## TUTORIALS / USE-CASES
 
@@ -101,9 +101,9 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 
 **FutureTDM**
 - Tutorials
-	- [Zika](tutorials/zika)
-	- [Statistics](tutorials/p-hacking)
-	- [Libraries](tutorials/systematic-literature-review)
+	- [Zika Virus](tutorials/zika)
+	- [P-Hacking](tutorials/p-hacking)
+	- [Systematic Literature Review (Train the Trainees for Librarians)](tutorials/systematic-literature-review)
 - Workshops
 	- [FutureTDM Workshop II at Brussels](workshops/futuretdm-brussels)
 	- [Workshop at ELPUB Conference in Limassol](workshops/elpub-limassol)

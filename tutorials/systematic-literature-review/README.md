@@ -1,4 +1,4 @@
-# Tutorial: Systematic Literature Review (Train the Trainees for Libririans)
+# Tutorial: Systematic Literature Review (Train the Trainees for Librarians)
 
 ## SETUP
 

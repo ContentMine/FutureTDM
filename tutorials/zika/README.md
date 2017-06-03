@@ -1,4 +1,4 @@
-# Tutorial: Zika
+# Tutorial: Zika Virus
 
 **The tutorial shows you some basic and advanced text and data mining methods with the ContentMine toolchain, to explore the scientific publications and get a better understanding of the research around the Zika virus.**
 

@@ -1,4 +1,4 @@
-# Tutorial: Statistics
+# Tutorial: P-hacking
 
 ## SETUP
 
