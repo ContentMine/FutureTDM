@@ -30,13 +30,13 @@ Use text data mining to get an overview on the research around the zika virus. H
 
 **Go to the [Zika Tutorial](tutorials/zika).**
 
-### Libraries (Systematic Literature Review)
+### Systematic Literature Review
 
-**Go to the [Libraries Tutorial](tutorials/libraries) (soon to come...).**
+**Go to the [Libraries Tutorial](tutorials/systematic-literature-review) (soon to come...).**
 
-### Statistics (p-hacking)
+### p-hacking
 
-**Go to the [Statistics Tutorial](tutorials/statistics) (soon to come...).**
+**Go to the [Statistics Tutorial](tutorials/p-hacking) (soon to come...).**
 
 ## WORKSHOPS
 
@@ -102,8 +102,8 @@ We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issue
 **FutureTDM**
 - Tutorials
 	- [Zika](tutorials/zika)
-	- [Statistics](tutorials/statistics)
-	- [Libraries](tutorials/libraries)
+	- [Statistics](tutorials/p-hacking)
+	- [Libraries](tutorials/systematic-literature-review)
 - Workshops
 	- [FutureTDM Workshop II at Brussels](workshops/futuretdm-brussels)
 	- [Workshop at ELPUB Conference in Limassol](workshops/elpub-limassol)

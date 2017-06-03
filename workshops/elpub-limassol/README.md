@@ -2,25 +2,28 @@
 
 Date: 6th of June 2017
 
-Location: 21st ELPUB Conference at Limassol, Cyprus
-
-[Website](http://www.cyprusconferences.org/elpub2017/)
+Location: [21st ELPUB Conference 2017](http://www.cyprusconferences.org/elpub2017/) at Limassol, Cyprus
 
 ## WORKSHOP
 
+In the hands-on workshop, we will give a basic insight on how to use text data mining techniques and the ContentMine software to help librarians with the systematic literature review.
+
+[Workshop Page](http://www.cyprusconferences.org/elpub2017/workshops.html)
+
 ### Timetable
 
-**6th of June 2017**
+**6th of June 2017 - Cornaro Hall**
 
 | Timetable     | Agenda       |
 |---------------|--------------|
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| 9:00 - 9:10 | Introduction FutureTDM |
+| 9:10 - 9:50 | Introduction text data mining with ContentMine + Q&A|
+| 9:50 - 10:15 | Setup ContentMine software |
+| 10:15 - 10:30 | Workshop part I|
+| 10:30 - 11:00 | Break |
+| 11:00 - 12:10 | Workshop part II|
+| 12:10 - 12:25 | Discussion: How to apply TDM for their own research? |
+| 12:25 - 12:30 | Conclusion |
 
 ### Introduction into the FutureTDM project
 
@@ -28,9 +31,7 @@ Location: 21st ELPUB Conference at Limassol, Cyprus
 
 In this session, we will give an introduction into text and data mining and the [ContentMine](http://contentmine.org) project. This includes the basic concept of TDM, legal issues, TDM with scholarly literature and use-cases. There will also be time for questions.
 
-### Workshop
-
-In the hands-on workshop, we will give a basic insight on how to use text data mining techniques and the ContentMine software to help librarians with the systematic literature review.
+### Setup ContentMine software
 
 **Requirements**
 
@@ -43,6 +44,10 @@ Install the needed ContentMine software. You have two options:
 You find everything you need to know for both of the options **[here](../../installation.md)**.
 
 **And don't forget, bring your own laptop with power supply to the workshop.**
+
+### Do text data mining
+
+For this, we go through the **[Librarians tutorial](../../tutorials/librarians/)**.
 
 ## CONTRIBUTION
 
