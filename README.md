@@ -6,10 +6,9 @@ All materials worked out in this repository where conducted within the EU Horizo
 <a href="http://futuretdm.eu/" title=""><img src="/assets/images/logo-futuretdm.png" alt="FutureTDM" height=50 /></a> <a href="http://contentmine.org" title=""><img src="/assets/images/logo-contentmine.png" alt="ContentMine" height=50 /></a> <a href="http://okfn.org/" title="Open Knowledge International"><img src="/assets/images/logo-okf.png" alt="Open Knowledge International" height=50 /></a>
 
 The main outcomes are:
-- 3 tutorials about specific use-cases of text data mining techniques
-	- [Zika virus](tutorial/zika)
-- workshop
-- presentation of the outcomes at 2 conferences 
+- three tutorials about specific use-cases of text data mining techniques
+- one workshop
+- one presentation of the outcomes at a conference
 
 All content and data is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All code is under the [MIT license](https://opensource.org/licenses/MIT).
 
