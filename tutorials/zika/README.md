@@ -34,7 +34,7 @@ As preparation we recommend to have a look at the resources list in [installatio
 
 ### Download from Europe PMC
 
-The first step always is to get the needed data from the APIs. For this, we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher APIs. In this tutorial, we will mainly use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from the life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
+The first step always is to get the needed data from the APIs. For this, we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher APIs. In this tutorial, we will only use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from the life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
 
 **Get Zika publications**
 
@@ -139,26 +139,23 @@ The prepared data now can be used to extract the facts via [ami](https://github.
 First, we use the [species plugin](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami#ami2-species) to get the genus and binomial nomenclature. The species are especially important, because knowing them could give us a lead in terms of Zika-transmitting animals, in our case *Aedes* (mosquitos).
 
 ```bash
-FOLDER='zika'
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genus
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type binomial
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genussp
+ami2-species --project zika -i scholarly.html --sp.species --sp.type genus
+ami2-species --project zika -i scholarly.html --sp.species --sp.type binomial
+ami2-species --project zika -i scholarly.html --sp.species --sp.type genussp
 tree zika
 ```
 
 ```bash
-FOLDER='aedesaegypti'
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genus
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type binomial
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genussp
+ami2-species --project aedesaegypti -i scholarly.html --sp.species --sp.type genus
+ami2-species --project aedesaegypti -i scholarly.html --sp.species --sp.type binomial
+ami2-species --project aedesaegypti -i scholarly.html --sp.species --sp.type genussp
 tree aedesaegypti
 ```
 
 ```bash
-FOLDER='usutu'
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genus
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type binomial
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genussp
+ami2-species --project usutu -i scholarly.html --sp.species --sp.type genus
+ami2-species --project usutu -i scholarly.html --sp.species --sp.type binomial
+ami2-species --project usutu -i scholarly.html --sp.species --sp.type genussp
 tree usutu
 ```
 
@@ -167,20 +164,17 @@ tree usutu
 Second, we use the word plugin to get frequencies of words in a publication. This can help us to get a better understanding  of the most important concepts. This could be a re-occuring location, a method constantly used or an important animal in the transmission process. With this explorative approach, it is planned to find new relations or get a general understanding of important knowledge.
 
 ```bash
-FOLDER='zika'
-ami2-word --project $FOLDER -i scholarly.html --w.words wordFrequencies
+ami2-word --project zika -i scholarly.html --w.words wordFrequencies
 tree zika
 ```
 
 ```bash
-FOLDER='aedesaegypti'
-ami2-word --project $FOLDER -i scholarly.html --w.words wordFrequencies
+ami2-word --project aedesaegypti -i scholarly.html --w.words wordFrequencies
 tree aedesaegypti
 ```
 
 ```bash
-FOLDER='usutu'
-ami2-word --project $FOLDER -i scholarly.html --w.words wordFrequencies
+ami2-word --project usutu -i scholarly.html --w.words wordFrequencies
 tree usutu
 ```
 
@@ -200,7 +194,7 @@ The analysis of the extracted data is done with Python in a [Jupyter Notebook](h
 
 **Use the Jupyter Notebook:**
 
-Start jupyter via:
+Go to the ```tutorials/zika/``` folder and start jupyter via:
 ```bash
 jupyter notebook
 ```

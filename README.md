@@ -30,13 +30,13 @@ Use text data mining to get an overview on the research around the zika virus. H
 
 **Go to the [Zika Tutorial](tutorials/zika).**
 
-### Systematic Literature Review
+### Systematic Literature Review (Train the Trainees for Librarians)
 
-**Go to the [Libraries Tutorial](tutorials/systematic-literature-review) (soon to come...).**
+**Go to the [Systematic Literature Review Tutorial](tutorials/systematic-literature-review).**
 
 ### p-hacking
 
-**Go to the [Statistics Tutorial](tutorials/p-hacking) (soon to come...).**
+**Go to the [P-hacking Tutorial](tutorials/p-hacking) (soon to come...).**
 
 ## WORKSHOPS
 
