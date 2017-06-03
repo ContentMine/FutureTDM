@@ -1,43 +1,14 @@
 # Tutorial: Librarians (Train the Trainees)
 
 ## SETUP
-#### Pre-requisites
-**Option 1: Install software locally (recommended)**
 
-You can find more about how to install the different software parts at their pages - [getpapers](https://github.com/ContentMine/getpapers), [norma](https://github.com/ContentMine/norma/releases) and [ami](https://github.com/ContentMine/ami/releases). This setup is the one used to create the tutorials. Additionally you need the following software to execute the tutorial:
-- [getpapers](https://github.com/ContentMine/getpapers) (0.4.12)
-- [norma](https://github.com/ContentMine/norma) (0.2.26)
-- [ami](https://github.com/ContentMine/ami)
-- [Python3](https://www.python.org/) (3.4.3) with the networkx (1.11), pandas (0.19.2), matplotlib (1.5.3) and numpy (1.11.3) modules.
-- [Jupyter Notebook](http://jupyter.org/) (4.2.1)
-- [pyCProject](https://github.com/ContentMine/pyCProject) (v.)
+**All software necessary can be found in [installation.md](../../installation.md).**
 
-**Option 2: Use the Virtual Machine**
+**Additional requirements**
 
-- [Install the Virtual Machine](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/vms) with the [Virtual Machine Image May 2016](https://drive.google.com/open?id=0B7pJKedx9b97LTBVRmEzbzJOVlU) and start it. The VM consists of:
-- [getpapers](https://github.com/ContentMine/getpapers) (0.4.5)
-- [norma](https://github.com/ContentMine/norma) (0.2.26)
-- [ami](https://github.com/ContentMine/ami) (0.2.24)
-- [Python3](https://www.python.org/) (3.2.3) and [IPython](http://ipython.org/) (4.1.1).
+- Memory: The downloaded data needs around 700 MB on your harddrive.
 
-The virtual machine has older software installed, so the commands sometimes do not work in the exact same way as documented here. For example, getpapers needs no ```-q``` flag for the query-term. Keep that in mind, if some problems appear.
-
-Before you can start, you neet to install pyCProject and upgrade numpy via pip. The superuser password is ```password```.
-
-```bash
-sudo pip install --upgrade numpy
-sudo pip install pycproject
-```
-
-**Preparation**
-- Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami).
-- Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
-
-Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
-```bash
-cd tutorials/zika
-```
-, and you are in the right folder.
+As preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
 
 ## TUTORIAL
 

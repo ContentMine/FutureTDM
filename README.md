@@ -16,7 +16,9 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 
 ## DO CONTENT MINING
 
-For this, please check out the [installation guide](installation.md) with a list of helpful resources to get into text data mining with the ContentMine software.
+To do text data mining with the content mine software you need two things:
+1. Install the ContentMine software. Find out more in [installation.md](../../installation.md).
+2. Learn about text data mining. As preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
 
 ## TUTORIALS / USE-CASES
 

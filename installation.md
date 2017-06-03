@@ -28,6 +28,7 @@ sudo pip install pycproject
 ## Learn text data mining with the ContentMine tools
 
 Here a collection of resources, to dive into text and data mining with our software and use the full power of it:
+- Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
 - [pyCProject](https://github.com/ContentMine/pyCProject): if you want to analyse the mined facts in Python, you should have a look at our Python wrapper for the [CProject](https://github.com/ContentMine/workshop-resources/blob/master/software-tutorials/cproject/README.md) file-structure.
 - run through our [software tutorials](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials). This helps you to get used to our tools. The needed ones are:
 	- [getpapers](https://github.com/ContentMine/workshop-resources/blob/master/software-tutorials/getpapers/README.md)

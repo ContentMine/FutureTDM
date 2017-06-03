@@ -1,6 +1,6 @@
 # Tutorial: Zika
 
-**The tutorial shows you some basic and advanced text and data mining methods with the ContentMine toolchain, to explore the scientific publications and get a better understanding of the Zika virus.**
+**The tutorial shows you some basic and advanced text and data mining methods with the ContentMine toolchain, to explore the scientific publications and get a better understanding of the research around the Zika virus.**
 
 The main part will focus on getting information about the Zika virus, the research done about it and the most relevant entities for it. A typical way how to gather information about a [pandemic](https://en.wikipedia.org/wiki/Pandemic) is to have a look at:
 - a) the virus itself ([Zika virus](https://en.wikipedia.org/wiki/Zika_virus))
@@ -13,6 +13,7 @@ As data source, we use all publications from the [Europe PMC](https://europepmc.
 The used approach should also work as a blueprint to gather information about pandemics in general and help for future research when a new virus starts to spread.
 
 ## ABOUT ZIKA
+
 The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.wikipedia.org/wiki/Flaviviridae). It is spread by daytime-active [*Aedes*](https://en.wikipedia.org/wiki/Aedes) mosquitos, such as [*Aedes aegypti*](https://en.wikipedia.org/wiki/Aedes_aegypti) and [*Aedes albopictus*](https://en.wikipedia.org/wiki/Aedes_albopictus).
 
 **Additional information**
@@ -20,26 +21,14 @@ The Zika virus (ZIKV) is a member of the virus family [Flaviviridae](https://en.
 - The [Spondweni virus](https://en.wikipedia.org/wiki/Spondweni_virus) is mentioned as phylogenetically very close to the Zika virus.
 
 ## SETUP
-#### Pre-requisites
 
-**All materials necessary, to setup your ContentMine software environment can be found at [FutureTDM README.md](../../README.md#preparation).**
+**All software necessary can be found in [installation.md](../../installation.md).**
 
-**Requirements**
+**Additional requirements**
 
 - Memory: The downloaded data needs around 700 MB on your harddrive.
 
-**Preparation**
-
-- Run through the tutorials of [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) and [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami). 
-- Get a basic understanding of what a [CProject](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject) and [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML) is.
-
-Both introductory steps are not mandatory, but help to better understand the tutorial and adapt it to your own needs.
-
-Before you start, go into the ```tutorials/zika``` directory in the shell. If you are in the root directory of this repository, just execute:
-```bash
-cd tutorials/zika
-```
-, and you are in the right folder.
+As preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
 
 ## TUTORIAL
 
