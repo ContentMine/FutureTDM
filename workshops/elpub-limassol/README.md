@@ -4,6 +4,10 @@ Date: 6th of June 2017
 
 Location: [21st ELPUB Conference 2017](http://www.cyprusconferences.org/elpub2017/) at Limassol, Cyprus
 
+Facilitators
+- [Stefan Kasberger](http://www.stefankasberger.at/): Training Manager at ContentMine, Workshop Leader
+- Freya van den Boom: Researcher and Project Manager at Open Knowledge International
+
 ## WORKSHOP
 
 In the hands-on workshop, we will give a basic insight on how to use text data mining techniques and the ContentMine software to help librarians with the systematic literature review.

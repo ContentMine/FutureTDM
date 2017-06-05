@@ -1,14 +1,16 @@
 # Tutorial: Systematic Literature Review (Train the Trainees for Librarians)
 
+Filter out and find relevant publications, to support you doing a systematic review around your research question - in a fully open and reproducible way.
+
 ## SETUP
 
-**All software necessary can be found in [installation.md](../../installation.md).**
+**Please visit [installation.md](../../installation.md) to learn how to install the needed software.**
 
 **Additional requirements**
 
 - Memory: The downloaded data needs around 700 MB on your harddrive.
 
-As preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
+In addition, for preparation we recommend to have a look at the resources list in [installation.md](../../installation.md). 
 
 ## TUTORIAL
 
@@ -21,14 +23,14 @@ The first step always is to get the needed data from the APIs. For this, we use 
 Then, we have a look at how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
 
 ```bash
-getpapers -q $QUERY -o $FOLDER
+getpapers -q zika -o zika
 ```
-1126 papers were found in this case (14. 03. 2017).
+1465 papers were found in this case (5. 6. 2017).
 
 Then, we download the ```fulltext.xml``` files for each publication. For this, add ```-x``` flag to the query. The results can then be viewed again with the tree command.
 
 ```bash
-getpapers -q $QUERY -o $FOLDER -x
+getpapers -q zika -o zika -x
 tree zika
 ```
 
@@ -51,9 +53,7 @@ First, we use the [species plugin](https://github.com/ContentMine/workshop-resou
 
 ```bash
 FOLDER='zika'
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genus
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type binomial
-ami2-species --project $FOLDER -i scholarly.html --sp.species --sp.type genussp
+ami2-species --project zika -i scholarly.html --sp.species --sp.type genus
 tree zika
 ```
 
@@ -75,12 +75,18 @@ This should let your browser open a new tab with the actual directory in it. Cli
 
 ## FOLLOW UPS
 
-- Do another tutorial from the FutureTDM project: [Statistics](tutorial/statistics) and [Zika](tutorial/zika)
+- Do another tutorial from the [FutureTDM project](../../README.md#tutorials)
 - Learn more about the tools used with our [software tutorials](https://github.com/ContentMine/workshop-resources)
 - [Contribute to this repository](../README.md#contribution)
 - Send us your results at [Discourse](http://discuss.contentmine.org/)
 - Share the tutorial with others in your department or social network.
-- Ask us your questions at [Discourse](http://discuss.contentmine.org/), via Email (contact@contentmine.org) or on Twitter ([@TheContentMine](https://twitter.com/TheContentMine))
+- Tell us your questions at [Discourse](http://discuss.contentmine.org/), via Email (contact@contentmine.org) or on Twitter ([@TheContentMine](https://twitter.com/TheContentMine))
+
+**Systematic Review**
+- [Cochrane Handbook for Systematic Reviews of Interventions](http://handbook.cochrane.org/)
+- [How to do a systematic literature review and meta-analysis](https://www.stir.ac.uk/media/schools/management/documents/centregradresearch/How%20to%20do%20a%20systematic%20literature%20review%20and%20meta-analysis.pdf)
+- [Five steps to conducting a systematic review](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539417/)
+- [Writing a systematic literature review: Resources for students and trainees](http://www.apsu.org.au/assets/Resources/Writing-a-Systematic-Literature-Review.pdf)
 
 ## RESSOURCES
 

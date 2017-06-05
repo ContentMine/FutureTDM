@@ -18,11 +18,11 @@ All content and data is licensed under the [Creative Commons Attribution 4.0 Int
 
 To do text data mining with the content mine software you need two things:
 1. Install the ContentMine software. Find out more in [installation.md](../../blob/master/installation.md).
-2. Learn about text data mining. As preparation we recommend to have a look at the resources list in [installation.md](../../blob/master/installation.md). 
+2. Learn about text data mining. As preparation we recommend to have a look at the resources list in [installation.md](../../blob/master/installation.md).
 
-## TUTORIALS / USE-CASES
+## TUTORIALS
 
-We worked out three very different use-cases to show the power of text data mining with our software.
+We worked out three different use-cases to show the power of text data mining with our software.
 
 ### Zika Virus
 
@@ -30,13 +30,15 @@ Use text data mining to get an overview on the research around the zika virus. H
 
 **Go to the [Zika Tutorial](tutorials/zika).**
 
+### P-Hacking
+
+(soon to come...)
+
 ### Systematic Literature Review (Train the Trainees for Librarians)
 
+Filter out and find relevant publications, to support you doing a systematic review around your research question - in a fully open and reproducible way.
+
 **Go to the [Systematic Literature Review Tutorial](tutorials/systematic-literature-review).**
-
-### p-hacking
-
-**Go to the [P-hacking Tutorial](tutorials/p-hacking) (soon to come...).**
 
 ## WORKSHOPS
 
