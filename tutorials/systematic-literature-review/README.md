@@ -26,6 +26,7 @@ A systematic literature review normally consists of these steps:
 Text and data mining normaly can support with steps 2 + 3, but also not more. TDM can decrease human workload by huge numbers, but can not do magic ether. This means, that especially the research design and the assessment must be done by humans in a sincere way.
 
 Our approach with Open Source and Open Access makes the process fully transparent and reproducible. Besides, and this is not just a small issue, it creates no legal issues. 
+
 ### Download the data
 
 **Go into the systematic literature review folder**
@@ -48,11 +49,13 @@ Then, we have a look at how many results we find for the query term. For further
 
 One important thing to keep in mind: the query only gets the publications accessible through the EUPMC API. So this is never the full list of literature available for a query.
 
-Look, how many results are found for the query:
+Look, how many results are found for the query "zika":
 ```bash
 getpapers -q zika -o zika
 ```
 1465 papers were found in this case (5. 6. 2017).
+
+If your query consists of more than one word, use "TERM1 TERM2" to encapsulate them.
 
 Then, we download the ```fulltext.xml``` files for each publication. For this, add ```-x``` flag to the query. The results can then be viewed again with the tree command.
 
@@ -61,7 +64,7 @@ getpapers -q zika -o zika -x
 tree zika
 ```
 
-An important step after downloading the publications is to have a look at some papers, if the fit the requirements. If not, adapt your query and try it again and again, until the outcome fits to your needs.
+An important step after downloading the publications is to have a look at some papers, if they fit the requirements. If not, adapt your query and try it again and again, until the outcome fits to your needs.
 
 ### Normalize the data
 
@@ -98,7 +101,6 @@ Let's have a look on the knowledge map for the term [zika](https://openknowledge
 ### Analyse the data with Jupyter Notebook
 
 The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/). There are several methods applied. Some of them are descriptive and show the wanted outcome, but some are explorativ, and conclusions must be done by a domain expert by exploring the data and its presentation by her/himselves. The following analysis is done:
-- 
 
 **Get the [Jupyter Notebook: tutorial-systematic-literature-review.ipynb](tutorial-systematic-literature-review.ipynb).**
 
