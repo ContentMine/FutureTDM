@@ -12,30 +12,27 @@ You can find more about how to install the different software parts at the speci
 - [Jupyter Notebook](http://jupyter.org/) (>=4.2.1)
 - [pyCProject](https://github.com/ContentMine/pyCProject) (v.)
 
+Download this FutureTDM repository:
+```
+git clone https://github.com/ContentMine/FutureTDM.git
+```
+
 ## Option 2: Use the Virtual Machine
 
 **Recommended for beginners and workshop participants.**
 
 In the virtual machine image, everything is pre-configured and running. This is a out of the box solution and is especially recommended for non-tech-savy people. You can find more information how to setup the virtual machine [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/vms) ([VirtualBox](https://www.virtualbox.org/)). Which virtual machine image you should use, is listed at the related tutorial or workshop documentation.
 
-When the virtual machine has been started, you need to install pyCProject and upgrade numpy via pip. The superuser password is ```password```.
+When the virtual machine has been started, you need to install pyCProject and upgrade numpy via pip. The superuser password is ```password```, if needed.
 
 ```bash
-sudo pip install --upgrade numpy
-sudo pip install pycproject
+pip install pycproject --upgrade
 ```
 
 Then download the FutureTDM repository:
 ```
 git clone https://github.com/ContentMine/FutureTDM.git
 ```
-
-Go into the systematic review folder: 
-```
-cd FutureTDM/tutorials/systematic-literature-review/
-```
-
-
 
 ## Learn text data mining with the ContentMine tools
 

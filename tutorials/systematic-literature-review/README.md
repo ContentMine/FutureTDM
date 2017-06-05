@@ -14,9 +14,16 @@ In addition, for preparation we recommend to have a look at the resources list i
 
 ## TUTORIAL
 
+**Go into the systematic literature review folder**
+
+```bash
+cd tutorials/systematic-literature-review/
+```
+
 ### Download from Europe PMC
 
 The first step always is to get the needed data from the APIs. For this, we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher APIs. In this tutorial, we will only use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from the life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
+
 
 **Get publications**
 
@@ -52,7 +59,6 @@ The prepared data now can be used to extract the facts via [ami](https://github.
 First, we use the [species plugin](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami#ami2-species) to get the genus and binomial nomenclature.
 
 ```bash
-FOLDER='zika'
 ami2-species --project zika -i scholarly.html --sp.species --sp.type genus
 tree zika
 ```
@@ -66,8 +72,10 @@ The analysis of the extracted data is done with Python in a [Jupyter Notebook](h
 
 **Use the Jupyter Notebook:**
 
-Go to the ```tutorials/systematic-literature-review/``` folder and start jupyter via:
+If you are not already in it, go to the ```tutorials/systematic-literature-review/``` folder and start jupyter via:
+
 ```bash
+cd tutorials/systematic-literature-review/
 jupyter notebook
 ```
 

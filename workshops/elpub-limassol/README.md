@@ -51,7 +51,7 @@ You find everything you need to know for both of the options **[here](../../inst
 
 ### Do text data mining
 
-For this, we go through the **[Librarians tutorial](../../tutorials/librarians/)**.
+For this, we go through the **[Systematic Literature Review](../../tutorials/systematic-literature-review/)**.
 
 ## CONTRIBUTION
 
