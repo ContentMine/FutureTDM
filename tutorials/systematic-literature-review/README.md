@@ -63,6 +63,12 @@ ami2-species --project zika -i scholarly.html --sp.species --sp.type genus
 tree zika
 ```
 
+### Look at OpenKnowledgeMaps
+
+A good way to get a basic understandic of the topics under a certain research field and the relations between publications and topics can be found at our befriended project OpenKnowledgeMaps. 
+
+Let's have a look on the knowledge map for the term [zika](https://openknowledgemaps.org/vis.php?id=fab526364913443cf7f56be49270938f&query=zika&service=pubmed).
+
 ### Analyse the data with Jupyter Notebook
 
 The analysis of the extracted data is done with Python in a [Jupyter Notebook](http://jupyter.org/). There are several methods applied. Some of them are descriptive and show the wanted outcome, but some are explorativ, and conclusions must be done by a domain expert by exploring the data and its presentation by her/himselves. The following analysis is done:
