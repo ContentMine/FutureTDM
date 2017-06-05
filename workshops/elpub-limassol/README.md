@@ -21,9 +21,9 @@ In the hands-on workshop, we will give a basic insight on how to use text data m
 | Timetable     | Agenda       |
 |---------------|--------------|
 | 9:00 - 9:10 | Introduction FutureTDM |
-| 9:10 - 9:50 | Introduction text data mining with ContentMine + Q&A|
-| 9:50 - 10:15 | Setup ContentMine software |
-| 10:15 - 10:30 | Workshop part I|
+| 9:10 - 9:40 | Introduction text data mining with ContentMine + Q&A|
+| 9:40 - 10:05 | Setup ContentMine software |
+| 10:05 - 10:30 | Workshop part I|
 | 10:30 - 11:00 | Break |
 | 11:00 - 12:10 | Workshop part II|
 | 12:10 - 12:25 | Discussion: How to apply TDM for their own research? |

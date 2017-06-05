@@ -14,21 +14,41 @@ In addition, for preparation we recommend to have a look at the resources list i
 
 ## TUTORIAL
 
+### General
+
+A systematic literature review normally consists of these steps:
+1. Define research question
+2. Get data
+3. Extract relevant data
+4. Assess quality of data
+5. Analyse and combine data
+
+Text and data mining normaly can support with steps 2 + 3, but also not more. TDM can decrease human workload by huge numbers, but can not do magic ether. This means, that especially the research design and the assessment must be done by humans in a sincere way.
+
+Our approach with Open Source and Open Access makes the process fully transparent and reproducible. Besides, and this is not just a small issue, it creates no legal issues. 
+### Download the data
+
 **Go into the systematic literature review folder**
 
 ```bash
 cd tutorials/systematic-literature-review/
 ```
 
-### Download from Europe PMC
-
 The first step always is to get the needed data from the APIs. For this, we use [getpapers](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/cproject), the ContentMine tool for getting papers via different Publisher APIs. In this tutorial, we will only use open access literature from [Europe PMC](http://europepmc.org/). We can search within their database of 3.5 million fulltext papers from the life-sciences. About one million of these are Open Access. Please refer to [Europe PMC-Data](http://europepmc.org/FtpSite) for details. This will take less than 200MB of memory.
 
+**Find the right query terms**
 
-**Get publications**
+This is the most crucial step of the whole tutorial. If you decide to take the wrong query term for the download of the publications, the whole dataset is wrong. This means, that also all the methods applied later will not deliver the needed outcome you want or expect to.
+
+An important point is to find the balance between a very sensitive query, where a lot of publications are in, but maybe also a lot of false positives (e. g. virus), and a very specific approach, where just a few hits are found, but a lot of false negatives may appeared (e. g. origin zika virus .
+
+**Get publications from Europe PubMedCentral (EUPMC)**
 
 Then, we have a look at how many results we find for the query term. For further information on how to create more complex queries for the EUPMC API, read [here](https://github.com/ContentMine/getpapers/wiki/europepmc-query-format) or [here](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/getpapers#complex-queries-for-europepmc).
 
+One important thing to keep in mind: the query only gets the publications accessible through the EUPMC API. So this is never the full list of literature available for a query.
+
+Look, how many results are found for the query:
 ```bash
 getpapers -q zika -o zika
 ```
@@ -41,6 +61,8 @@ getpapers -q zika -o zika -x
 tree zika
 ```
 
+An important step after downloading the publications is to have a look at some papers, if the fit the requirements. If not, adapt your query and try it again and again, until the outcome fits to your needs.
+
 ### Normalize the data
 
 Before we can start with the extraction and analysis, we have to normalize the raw data and convert it to [Scholarly HTML](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/sHTML), so it is easier to process further on. For this, we convert with [norma](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/norma) the ```fulltext.xml``` files to ```scholarly.html``` files, and view the results.
@@ -50,9 +72,13 @@ norma --project zika -i fulltext.xml -o scholarly.html --transform nlm2html
 tree zika
 ```
 
+Normalizing is a very important step, which rarely gets attention. The input data is normally heterogenous - in terms of structure as in content - and needs to be transformed into one central standard. This helps then other tools to connect to the data and function as a central interface to the data coming from diverse sources.
+
 ### Extract the needed facts
 
 The prepared data now can be used to extract the facts via [ami](https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami)'s different plugins. This will be &mdash; besides the [metadata](https://en.wikipedia.org/wiki/Metadata) of the publications &mdash; the main datasource for the further analysis later on.
+
+This is, where the actual text data mining takes place. Everything before was just preparation, which takes normally most of the time. Here all kinds of entities can be extracted, from species to drugs to genus. Via regex's and dictionaries also your own terms can be looked for.
 
 #### Extract Species
 
@@ -85,7 +111,7 @@ cd tutorials/systematic-literature-review/
 jupyter notebook
 ```
 
-This should let your browser open a new tab with the actual directory in it. Click on the ```tutorial-systematic-literature-review.ipynb``` file to open the jupyter notebook. Then you can execute cell by cell and adapt the notebook to your needs. There is a more detailed description of the analysis done in the Jupyter notebook.
+This should let your browser open a new tab with the actual directory in it. Click on the ```tutorial-systematic-literature-review.ipynb``` file to open the jupyter notebook. Then you can execute cell by cell and adapt the notebook to your needs. There is a more detailed description of the functionality and analysis done in the Jupyter notebook.
 
 ## FOLLOW UPS
 
