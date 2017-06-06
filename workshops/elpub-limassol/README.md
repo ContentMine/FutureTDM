@@ -47,6 +47,13 @@ Install the needed ContentMine software. You have two options:
 
 You find everything you need to know for both of the options **[here](../../installation.md)**.
 
+**Copy files from USB-Drive**
+
+You need following files from the USB-drive:
+- *.ova file
+- virtualbox file: *.exe for Windows, *.dmg for Mac
+- zika folder
+
 **And don't forget, bring your own laptop with power supply to the workshop.**
 
 ### Do text data mining
