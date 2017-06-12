@@ -12,4 +12,4 @@ Location: University of Applied Sciences in Salzburg, Austria
 
 ## CONTRIBUTION
 
-ContentMine will be present with Peter Murray-Rust and Stefan Kasberger. Stefan will hold a presentation with a summary of all activities throughout the FutureTDM project participation and participate on a panel about text data mining. 
+ContentMine will be present with Peter Murray-Rust and Stefan Kasberger. Stefan will participate in the demo session (12:05 - 13:30)  with a summary of all activities throughout the FutureTDM project participation and take part on the use-cases of text data mining panel. 
