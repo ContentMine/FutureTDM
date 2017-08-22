@@ -95,7 +95,7 @@ When you are ready, submit a [pull request](https://github.com/ContentMine/Futur
 
 We use the [GitHub issue tracker](https://github.com/ContentMine/FutureTDM/issues) to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. When submitting a bug report, please try to provide a screenshot that demonstrates the problem. 
 
-## RESSOURCES
+## RESOURCES
 
 - [ContentMine](http://contentmine.org/)
 - [FutureTDM](http://futuretdm.eu/)
